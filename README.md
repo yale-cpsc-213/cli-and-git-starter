@@ -109,3 +109,42 @@ a `$SUBMISSION` directory that has the following contents
   Is it `emacs`?) Now, I'd like you to tag the current commit (which is
   passing the first four questions) as version "v1.5". You can use
   [git lightweight tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+6. **Create some git branches**.
+  Now we're going to create some git branches.
+  The purpose of this exercise is to show you that you can have different
+  work (files, versions of files, directories, whatever) in different branches
+  and you can switch back and forth. To begin, I'd like you to use
+  the `git branch` command to create a branch
+  named "fubar" and to check it out with the `git checkout` command. You should then create a file in your `$SUBMISSION`
+  directory called `situation.txt` and make the contents "fubar". Then
+  commit that work. After you've committed that work, please make and
+  checkout a new
+  branch called "normal" and alter the contents of `situation.txt` such
+  that the contents say "normal" instead of "fubar". Commit your work.
+  _Now, check out your "master" branch again._
+
+7. **Use git log to inspect the Elixir history**.
+  [Elixir](http://elixir-lang.org/) is a new functional
+  programming language build on [Erlang](https://www.erlang.org/)
+  and I think it is _super cool_. I wish we could use it in this
+  class, but JavaScript is likely more practical for you. I'd like
+  you to clone the [Elixir git repo](https://github.com/elixir-lang/elixir)
+  to your computer. Once you've cloned the repo, you should be able
+  to use the `git log` command, `grep`, `cut` and
+  `tail` to show me the first 50 commits that
+  [José Valim](https://twitter.com/josevalim?lang=en) contributed
+  to the Elixir project. (Hint, you'll want to [pretty format git](https://git-scm.com/docs/pretty-formats) so you can search
+  the commit history easily.)
+
+  I'd like you to put the 6-letter hashes of those commits into a
+  file in your `$SUBMISSION` directory called `elixir-jose.txt`.
+  It should have lines like the following:
+  ```
+  b8c8baa
+  884d607
+  a2b97b6
+  7216233
+  31b2a19
+  dd293e6
+  ```
