@@ -148,3 +148,33 @@ a `$SUBMISSION` directory that has the following contents
   31b2a19
   dd293e6
   ```
+
+8. **Git blame people responsible for Hapi**. [Hapi](https://hapijs.com/)
+  is a JavaScript web framework---it helps you write server-side web
+  applications that listen for HTTP requests and give HTTP responses.
+  It was created by Walmart to handle Black Friday traffic and people
+  tend to have positive feelings about it. We're likely to use Hapi in
+  this class.
+
+  Like many open source projects, Hapi's source code is
+  kept on GitHub. You can `git clone` it, make a branch, fix a bug and then
+  send them a "pull request" to have your bugfix accepted into the code.
+  Here is "diff" showing a change contributed by a user recently:
+  [https://github.com/hapijs/hapi/commit/0cfb81](https://github.com/hapijs/hapi/commit/0cfb81). Notice that line 57 of the file `lib/handler.js`
+  was changed: the original is on
+  the left hand side of that page and the new line is on the right hand
+  side. I'd like you to use the `git blame` command (or the GitHub website)
+  to figure out who last edited line 57 of `lib/handler.js` before user [sirgallifrey](https://github.com/sirgallifrey) contributed this pull
+  request. Once you've found that user's GitHub user name, please put it
+  in a file called `hapi-57.txt` in your `$SUBMISSION` directory. For example
+  if it was me, you'd put in there
+  ```
+  kljensen
+  ```
+
+## Others
+
+* curl
+* sha hash, md5
+* merging
+* git blame
