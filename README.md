@@ -4,6 +4,7 @@
 
 In this assignment you will complete a series of exercises that
 expose you to common shell commands and git workflows. You'll
+be manipulating files and directories and  you'll
 end up producing a git repository that you will push up to GitHub.
 Along the way, you'll be able to run a program that does two things:
 it generates data (mostly directories and files) upon which you'll
@@ -69,10 +70,13 @@ to see if you did it correctly. For example, imagine I might run the following
 the `grep` command to get a list of doctors at the movies. If you
 need help figuring out how to use `grep`, type `man grep` to see
 the manual page. Use the karat `>` to redirect the output of your
-`grep` command.
+`grep` command. Put the list of doctors in to a file called
+`movies/doctors-at-the-movies.txt` in your `$SUBMISSION` directory.
 
 3. **Count the number of people going by "Mrs" at the movies**.
-Some of the people at the movie go by "Mrs.". Use the `grep` and `wc`
+Some of the people at the movie go by "Mrs.". (I generate these names
+randomly. The library I used contains only "Mr/Mrs/Dr".)
+Use the `grep` and `wc`
 commands to count how many such people there are and put that number
 into a file called `mrs-count.txt` in your `$SUBMISSION/movies` directory.
 You will need to "pipe" these two commands together using the `|` character
@@ -93,6 +97,7 @@ to `grep`.)
 a `$SUBMISSION` directory that has the following contents
 
   ```
+  $SUBMISSION/README.md
   $SUBMISSION/movies
   $SUBMISSION/movies/doctors-at-the-movies.txt
   $SUBMISSION/movies/movie-goers.txt
@@ -148,6 +153,7 @@ a `$SUBMISSION` directory that has the following contents
   31b2a19
   dd293e6
   ```
+  Add this file to your git repo and commit your work.
 
 8. **Git blame people responsible for Hapi**. [Hapi](https://hapijs.com/)
   is a JavaScript web framework---it helps you write server-side web
@@ -171,10 +177,54 @@ a `$SUBMISSION` directory that has the following contents
   ```
   kljensen
   ```
+  Add this file to your git repo and commit your work.
 
-## Others
+9. **Use CURL to download the Gettysburg Address** The program
+  `curl` is installed
+  on most unix-like machines. It is a useful HTTP client that you can use to
+  interact with APIs, download files, and browse the web. I'd like you to use
+  use `curl` to download the file [https://goo.gl/hFevV6](https://goo.gl/hFevV6) and place the contents into a file called
+  `geezy-lincoln.txt` in your `$SUBMISSION` directory.
+  You'll notice that I used a URL shortener. If you want `curl` to follow
+  the redirect, you'll need to give it a special command line flag. You
+  can give it a different flag to tell it to write its response content
+  into your `geezy-lincoln.txt` file.
 
-* curl
-* sha hash, md5
-* merging
-* git blame
+  Use the program `less`
+  or `cat` to take a look at it. It is important that
+  you download the contents directly and not alter them in any way, so you
+  should be careful: don't copy and paste them. Now, we're going to compute
+  the hash of that file's contents. First, let's make a copy of the file
+  and put it at `geezy-lincoln2.txt`. Then, use the `echo` command to add
+  a single "!" character at the of that file. You can do that like
+  `echo -n "!" >>geezy-lincoln2.txt`, where we're using `>>`. You use
+  `>` when you want to put the output of a command into a file. You use
+  `>>` when you want to append to that file instead. Now, I'd like you to
+  compute the [SHA-1](https://en.wikipedia.org/wiki/SHA-1) hashes of each
+  file and put them into a file called `lincoln-hashes.txt`. You can use
+  the command  `shasum` or `sha1sum` or `openssl sha1` to compute the sha-1
+  hash of the file contents. You might want to use the `cut` command
+  too. Your `lincoln-hashes.txt` file might look
+  something like
+  ```
+  fe7baa1db1bef4a5334960e89641252b73513313
+  d47b548c88536962387c2e2fa6b6da5ccf8a72aa
+  ```
+  Add this file to your git repo and commit your work.
+
+  You should notice that the addition of a single "!" dramatically changes
+  the contents of the hash. "Collisions", where two pieces of data have the
+  same hash, are exceedingly rare. That's why git can use sha-1 hashes to
+  uniquely identify files: it's a small string that conveniently summarizes
+  even enormous bodies of text, code, data, a directory structure, etc.
+  For most purposes, we can
+  even get by using the first 6 characters of the hash. Of course, it is
+  hard to remember hashes, which is why we great "branches" and "tags"
+  in git--they're easier to remember!
+
+
+## You're done!
+
+Commit your work to your `master` branch. Then, push it up to GitHub.
+Also, push up your `fubar` and `normal` branches so we can give you
+credit for answering those questions!
