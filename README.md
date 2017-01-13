@@ -4,38 +4,62 @@
 
 In this assignment you will complete a series of exercises that
 expose you to common shell commands and git workflows. You'll
-be manipulating files and directories and  you'll
+be manipulating files and directories and you'll
 end up producing a git repository that you will push up to GitHub.
-Along the way, you'll be able to run a program that does two things:
-it generates data (mostly directories and files) upon which you'll
-use shell commands and it tells you if you're successfully completing
-the assignment. We'll use this same program to grade the assignment.
-_We are guessing this assignment will take you about an hour._
+When we grade the assignment, we will clone your repo on GitHub
+and run our grading program. That program is made available to
+you while you do the homework, so you should be able to get
+full credit on the assignment. This program does two things:
+it grades the assignment and it also generates the data that
+you need for the assignment.
+
+_We are guessing this assignment will take you about two hours
+if you are very new to the shell and git._
 
 ## Getting started
+
+First, you'll need to me working on a unix-like machine with a
+shell like bash. Your average mac will work, as will a Linux virtual
+machine on [Cloud9](http://c9.io),
+[DigitalOcean](http://digitalocean.com), AWS, Google Compute
+Engine, whatever. You can also use the Zoo computing cluster
+in the CS department. (Cloud9 is free, but asks for a credit
+card. I will post a link that lets you skip this part on Canvas.
+Also, you can find many free resources in the [GitHub
+Student Development Pack](https://education.github.com/pack).)
 
 First, you will need to clone the starter code. You might have done
 that already, because that's where we're keeping this file.
 
-Next, you'll need to download ...TOTO: COMPLETE!
+Next, you'll need to download the program we'll use for grading. You
+can find that at the following URLs:
+* for a mac: [https://goo.gl/UWEG93](https://goo.gl/UWEG93)
+* for linux: [https://goo.gl/cu2Pcq](https://goo.gl/cu2Pcq)
+
+You could download this in many ways. E.g. I used the following
+on a linux machine:
+```
+curl -L -o cpsc213hw1 https://goo.gl/cu2Pcq
+chmod a+x cpsc213hw1
+```
 
 Then, you'll want to produce the example data on which you'll work.
 Run the code like the following
 
 ```
-cli_exam build NETID DIRECTORY
+cpsc213hw1 build NETID DIRECTORY
 ```
 
 For example if your net id is `kls233` and you want your test data in
 `homework-data` you'd run
 
 ```
-cli_exam kls233 homework-data
+cpsc213hw1 build kls233 homework-data
 ```
 
 After running this, you'll notice there are bunch of subdirectories and
-files inside of `homework-data`. IMPORTANTLY: do not put this directory
-in the same directory as your answers---you should keep them separate.
+files inside of `homework-data`. It is important that you do not put this
+directory in the same directory as your answers---you should keep them separate.
 
 
 ## Exercises
@@ -57,11 +81,11 @@ be able to Google for how to do that.) To begin, use the
 directory. Then, use the `cp` command to copy your `movie-goers.txt` file
 into that directory. You should now have a a file at
 `$SUBMISSION/movies/movie-goers.txt`.
-After you've done this, run `cli_exam test $NETID $SUBMISSION`
+After you've done this, run `cpsc213hw1 test $NETID $SUBMISSION`
 to see if you did it correctly. For example, imagine I might run the following
 
   ```
-  cli_exam test kls233 /Users/kljensen/cli-and-git
+  cpsc213hw1 test kls233 /Users/kljensen/cli-and-git
   ```
 
   if my answers were sitting in a directory called `cli-and-git`.
