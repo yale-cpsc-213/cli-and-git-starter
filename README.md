@@ -18,6 +18,12 @@ if you are very new to the shell and git._
 
 ## Getting started
 
+To begin, you will need to get an invitation to begin this
+assignment from Kyle Jensen. (Though, if you're reading this,
+you've likely already accepted that invitation!) Now that you've
+accepted, we're going to walk you through how to complete the
+assignment.
+
 First, you'll need to me working on a unix-like machine with a
 shell like bash. Your average mac will work, as will a Linux virtual
 machine on [Cloud9](http://c9.io),
@@ -28,8 +34,15 @@ card. I will post a link that lets you skip this part on Canvas.
 Also, you can find many free resources in the [GitHub
 Student Development Pack](https://education.github.com/pack).)
 
-First, you will need to clone the starter code. You might have done
-that already, because that's where we're keeping this file.
+First, you will need to clone the repository that was created
+for you on GitHub when you accepted this assignment. That repo
+is likely something akin to
+`https://github.com/yale-cpsc-213/command-line-and-git-USERNAME`,
+where USERNAME is your GitHub username. You'll need to use the
+`git clone` command to clone the repo on whatever machine you're
+using to complete your homework. You'll be adding files to this
+repo and them pushing them back up to GitHub. That is how we'll
+grade your assignment.
 
 Next, you'll need to download the program we'll use for grading. You
 can find that at the following URLs:
@@ -66,8 +79,11 @@ directory in the same directory as your answers---you should keep them separate.
 
 For the sakes of brevity and clarity, we'll refer to your data directory
 as `$DATA` and the directory with files you'll turn in as `$SUBMISSION`.
+The `$SUBMISSION` directory is your local copy of the git repo you cloned
+from GitHub. It is what you will ultimately submit by pushing to GitHub.
 As you do analyses, you'll
-be committing your work to your git repo and I'll tell you when you should
+be committing your work to your local git repo and I'll tell you when
+you should
 do that. Of course, if you get an answer
 wrong, you can always fix it---that is the beauty of git.
 
