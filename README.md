@@ -53,21 +53,23 @@ You could download this in many ways. E.g. I used the following
 on a linux machine:
 ```
 curl -L -o cpsc213hw1 https://goo.gl/cu2Pcq
-chmod a+x cpsc213hw1
+chmod a+x ./cpsc213hw1
 ```
 
 Then, you'll want to produce the example data on which you'll work.
 Run the code like the following
 
 ```
-cpsc213hw1 build NETID DIRECTORY
+./cpsc213hw1 build NETID DIRECTORY
 ```
 
+(You might not need the "./" depending on your `$PATH`, I'm including it
+here for those of you blindly copying and pasting.)
 For example if your net id is `kls233` and you want your test data in
 `homework-data` you'd run
 
 ```
-cpsc213hw1 build kls233 homework-data
+./cpsc213hw1 build kls233 homework-data
 ```
 
 After running this, you'll notice there are bunch of subdirectories and
@@ -97,11 +99,11 @@ be able to Google for how to do that.) To begin, use the
 directory. Then, use the `cp` command to copy your `movie-goers.txt` file
 into that directory. You should now have a a file at
 `$SUBMISSION/movies/movie-goers.txt`.
-After you've done this, run `cpsc213hw1 test $NETID $SUBMISSION`
+After you've done this, run `./cpsc213hw1 test $NETID $SUBMISSION`
 to see if you did it correctly. For example, imagine I might run the following
 
   ```
-  cpsc213hw1 test kls233 /Users/kljensen/cli-and-git
+  ./cpsc213hw1 test kls233 /Users/kljensen/cli-and-git
   ```
 
   if my answers were sitting in a directory called `cli-and-git`.
