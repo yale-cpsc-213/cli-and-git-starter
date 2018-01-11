@@ -64,7 +64,8 @@ Run the code like the following
 ```
 
 (You might not need the "./" depending on your `$PATH`, I'm including it
-here for those of you blindly copying and pasting.)
+here for those of you blindly copying and pasting. Also, don't create the 
+directory beforehand--the `build` command will create it for you.)
 For example if your net id is `kls233` and you want your test data in
 `homework-data` you'd run
 
