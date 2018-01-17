@@ -46,8 +46,8 @@ grade your assignment.
 
 Next, you'll need to download the program we'll use for grading. You
 can find that at the following URLs:
-* for a mac: [https://goo.gl/UWEG93](https://goo.gl/UWEG93)
-* for linux: [https://goo.gl/cu2Pcq](https://goo.gl/cu2Pcq)
+* [for a mac](https://s3.amazonaws.com/kljensen/public/cpsc213hw1/mac/cpsc213hw1)
+* [for linux](https://s3.amazonaws.com/kljensen/public/cpsc213hw1/linux/cpsc213hw1)
 
 You could download this in many ways. E.g. I used the following
 on a linux machine:
