@@ -35,10 +35,8 @@ Also, you can find many free resources in the [GitHub
 Student Development Pack](https://education.github.com/pack).)
 
 First, you will need to clone the repository that was created
-for you on GitHub when you accepted this assignment. That repo
-is likely something akin to
-`https://github.com/yale-cpsc-213/command-line-and-git-USERNAME`,
-where USERNAME is your GitHub username. You'll need to use the
+for you on GitHub when you accepted this assignment.
+You'll need to use the
 `git clone` command to clone the repo on whatever machine you're
 using to complete your homework. You'll be adding files to this
 repo and them pushing them back up to GitHub. That is how we'll
