@@ -185,7 +185,7 @@ a `$SUBMISSION` directory that has the following contents
   to the Elixir project. (Hint, you'll want to [pretty format git](https://git-scm.com/docs/pretty-formats) so you can search
   the commit history easily.)
 
-  I'd like you to put the 6-letter hashes of those commits into a
+  I'd like you to put the 7-letter hashes of those commits into a
   file in your `$SUBMISSION` directory called `elixir-jose.txt`.
   It should have lines like the following:
   ```
