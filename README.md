@@ -24,7 +24,7 @@ you've likely already accepted that invitation!) Now that you've
 accepted, we're going to walk you through how to complete the
 assignment.
 
-First, you'll need to me working on a unix-like machine with a
+First, you'll need to be working on a unix-like machine with a
 shell like bash. Your average mac will work, as will a Linux virtual
 machine on [Cloud9](http://c9.io),
 [DigitalOcean](http://digitalocean.com), AWS, Google Compute
@@ -183,7 +183,7 @@ a `$SUBMISSION` directory that has the following contents
   to the Elixir project. (Hint, you'll want to [pretty format git](https://git-scm.com/docs/pretty-formats) so you can search
   the commit history easily.)
 
-  I'd like you to put the 7-letter hashes of those commits into a
+  I'd like you to truncate the hashes of those commits to their first 7 letters and put them into a
   file in your `$SUBMISSION` directory called `elixir-jose.txt`.
   It should have lines like the following:
   ```
@@ -237,7 +237,7 @@ a `$SUBMISSION` directory that has the following contents
   should be careful: don't copy and paste them. Now, we're going to compute
   the hash of that file's contents. First, let's make a copy of the file
   and put it at `geezy-lincoln2.txt`. Then, use the `echo` command to add
-  a single "!" character at the of that file. You can do that like
+  a single "!" character at the end of that file. You can do that like
   `echo -n "!" >>geezy-lincoln2.txt`, where we're using `>>`. You use
   `>` when you want to put the output of a command into a file. You use
   `>>` when you want to append to that file instead. Now, I'd like you to
