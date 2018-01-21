@@ -50,7 +50,7 @@ can find that at the following URLs:
 You could download this in many ways. E.g. I used the following
 on a linux machine:
 ```
-curl -L -o cpsc213hw1 https://goo.gl/cu2Pcq
+curl -L -o cpsc213hw1 https://s3.amazonaws.com/kljensen/public/cpsc213hw1/linux/cpsc213hw1
 chmod a+x ./cpsc213hw1
 ```
 
